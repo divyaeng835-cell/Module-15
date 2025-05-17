@@ -3,8 +3,6 @@
 ## AIM:
 To write a Python program to build a binary tree with a root, left, and right node using floating-point values.
 
----
-
 ## ALGORITHM:
 
 1. **Start the program.**
@@ -14,16 +12,26 @@ To write a Python program to build a binary tree with a root, left, and right no
 5. **Convert the tree** to a list and print the list of nodes.
 6. **End the program.**
 
----
 
 ## PYTHON PROGRAM
 
 ```
-ENTER YOUR CODE
+from binarytree import Node
+l=[]
+for i in range(0,3):
+  a=float(input())
+  l.append(a)
+root= Node(l[0])
+root.left = Node(l[1])
+root.right= Node(l[2])
+print('List of nodes :', list(root))
+
 ```
 
 ## OUTPUT
-```
-```
+
+![Screenshot 2025-05-17 141121](https://github.com/user-attachments/assets/128cbf84-1090-4a2b-b19e-bf14aa2f8416)
 
 ## RESULT
+Thus the Python program to build a binary tree with a root, left, and right node using floating-point values has been implemented and executed
+
